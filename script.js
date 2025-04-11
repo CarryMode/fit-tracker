@@ -28,3 +28,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  const exercises = [
+    "Bench Press (Barbell)",
+    "Incline Press (Dumbbell)",
+    "Cable Fly",
+    "Deadlift",
+    "Lat Pulldown"
+  ];
+  
+  const addExerciseBtn = document.getElementById("addExerciseBtn");
+  const exerciseList = document.getElementById("exerciseList");
+  
+  addExerciseBtn.addEventListener("click", () => {
+    const container = document.createElement("div");
+    container.classList.add("exercise-item");
+  
+    // Dropdown
+    const select = document.createElement("select");
+    exercises.forEach(ex => {
+      const option = document.createElement("option");
+      option.value = ex;
+      option.textContent = ex;
+      select.appendChild(option);
+    });
+  
+    // Inputs
+    const weightInput = document.createElement("input");
+    weightInput.type = "number";
+    weightInput.placeholder = "Weight (kg)";
+    weightInput.min = "0";
+  
+    const repsInput = document.createElement("input");
+    repsInput.type = "number";
+    repsInput.placeholder = "Reps";
+    repsInput.min = "1";
+  
+    // Add to container
+    container.appendChild(select);
+    container.appendChild(weightInput);
+    container.appendChild(repsInput);
+  
+    // Append to workout list
+    exerciseList.appendChild(container);
+  });
+  

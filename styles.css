@@ -87,3 +87,21 @@ button:hover {
 .hidden {
   display: none;
 }
+
+.exercise-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .exercise-item input,
+  .exercise-item select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
