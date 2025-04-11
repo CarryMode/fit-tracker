@@ -82,3 +82,8 @@ button {
 button:hover {
   background-color: #0b74d4;
 }
+
+
+.hidden {
+  display: none;
+}

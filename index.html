@@ -31,7 +31,25 @@
 
     <section id="training-section" class="page">
       <h2>Start a Workout</h2>
-      <button>Begin</button>
+
+      <!-- Quick Start Button -->
+      <button id="quickStartBtn">Quick Start</button>
+
+      <!-- Workout Form -->
+      <div id="workoutForm" class="hidden">
+        <h3>Quick Start Workout</h3>
+        <div id="exerciseList"></div>
+        <button id="addExerciseBtn">+ Add Exercise</button>
+        <button id="finishWorkoutBtn">Finish Workout</button>
+      </div>
+      
+
+      <!-- Templates -->
+      <section id="templates">
+        <h3>Workout Templates</h3>
+        <div class="template" data-template="chest">Chest Day (Bench, Incline, Cable)</div>
+        <div class="template" data-template="back">Back Day (Pullups, Rows, Lat Pull)</div>
+      </section>
     </section>
   </main>
 
