@@ -105,3 +105,14 @@ button:hover {
     font-size: 1rem;
   }
   
+  .workout-entry {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #1e90ff;
+    background-color: #f0f4ff;
+    border-radius: 6px;
+  }
+  .workout-entry h4 {
+    margin-bottom: 0.5rem;
+  }
+  
